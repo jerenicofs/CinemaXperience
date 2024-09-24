@@ -1,0 +1,250 @@
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px 1fr;
+    height: 29rem;
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.photo {
+    background-size: cover;
+    /* position: relative; */
+    opacity: 50%;
+    height: auto;
+    width: 33vw;
+}
+
+.photo-1 {
+    background: linear-gradient(
+            to left,
+            rgba(38, 36, 34, 1),
+            rgba(38, 36, 34, 0)
+        ),
+        url("../assets/landingPage/obs.jpg") center/cover no-repeat;
+}
+
+.photo-2 {
+    background: linear-gradient(
+            to right,
+            rgba(38, 36, 34, 0),
+            rgba(38, 36, 34, 1)
+        ),
+        linear-gradient(to right, rgba(38, 36, 34, 1), rgba(38, 36, 34, 0)),
+        url("../assets/landingPage/shopforkiller.jpg") center/cover no-repeat;
+}
+
+.photo-3 {
+    background: linear-gradient(
+            to left,
+            rgba(38, 36, 34, 0),
+            rgba(38, 36, 34, 1)
+        ),
+        url("../assets/landingPage/aos.jpeg") center/cover no-repeat;
+}
+
+.photo-4 {
+    background: linear-gradient(
+            to left,
+            rgba(38, 36, 34, 0),
+            rgba(38, 36, 34, 1)
+        ),
+        url("../assets/HomePage/Qot.jpg") center/cover no-repeat;
+}
+
+.photo-5 {
+    background: linear-gradient(
+            to left,
+            rgba(38, 36, 34, 0),
+            rgba(38, 36, 34, 1)
+        ),
+        url("../assets/HomePage/DOTS.jpg") center/cover no-repeat;
+}
+
+.hero-content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.email-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.2rem 0 0 0.2rem;
+    width: 25rem;
+}
+
+.email-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 0.2rem 0.2rem 0;
+    background-color: #ffd717;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.animate {
+    font-weight: bold;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1em solid white; /* This creates the blinking cursor */
+    animation: typing 4s steps(30, end) infinite,
+        blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    70% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: white;
+    }
+}
+
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.login-container {
+    position: relative;
+    background: #131211;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    min-width: 25rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.login-container h2 {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email,
+.password {
+    background: rgba(170, 166, 166, 0.1);
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.75rem;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.login-btn {
+    background-color: #ffd717;
+    color: #000;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 2rem;
+}
+
+.login-container input {
+    color: #fff;
+}
+/* INI KALAU MAU EDIT" ALERT  */
+
+/* .custom-alert-success {
+    background-color: #ffd717;
+    color: white;
+    opacity: 0.8;
+}
+
+.custom-alert-login-error {
+    background-color: red;
+} */
+
+.Scrolling_Background {
+    width: 100%;
+    display: inline-flex;
+    animation: 27s scrolling infinite linear;
+}
+
+@keyframes scrolling {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

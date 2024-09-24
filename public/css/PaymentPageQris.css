@@ -1,0 +1,127 @@
+.container.payment-container {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 360px; /* Adjust width as necessary */
+    text-align: left; /* Align text to the left inside the container */
+    margin: 0 auto; /* Centers horizontally */
+    display: flex; /* Enables vertical centering */
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+h1.payment-heading {
+
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1.Scan-Code-Title {
+
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+}
+
+.Scan-Code-Title {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input-field {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group .input-field {
+    width: calc(50% - 12px);
+}
+
+.pay-now-btn {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pay-now-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Container for the radio button and the label */
+label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+    display: none;
+}
+
+/* Custom radio button style */
+input[type="radio"] + span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black; /* Default black color */
+    position: relative;
+    margin-right: 5px;
+}
+
+/* Inner circle for checked state */
+input[type="radio"]:checked + span::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style for the image next to the radio button */
+label img {
+    vertical-align: middle; /* Align image to the middle */
+}

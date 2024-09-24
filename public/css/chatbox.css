@@ -1,0 +1,84 @@
+/* Tailwind CSS base */
+@import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css";
+
+/* Custom styles */
+.friend-item {
+    display: flex;
+    /* position: absolute; */
+    align-items: center;
+    background-color: #ffd700;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    min-width: 15rem;
+}
+
+.friend-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    border-color: #ffd700;
+    align-content: center;
+    align-items: center;
+}
+
+.friend-btn {
+    background-color: #b8860b;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    min-width: 2rem;
+    min-height: auto;
+}
+
+.TopTitle {
+    border-left: 0.6rem solid #ffd717;
+    color: white;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.SideTitle {
+    border-left: 0.3rem solid #ffd717;
+    color: white;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.input_box{
+    height: 2.5rem;
+    background-color:#302e2c;
+    /* border-color:white;
+    border-width: 0.3px; */
+
+}
+
+input[type="text"]{
+
+    min-width: 100%;
+    border-radius: 0.2rem;
+    color: black;
+}
+
+input[placeholder]{
+    font-size:1rem;
+}
+
+.input:focus {
+    background-color: transparent;
+    color: white;
+    border: 1px solid yellow;
+    outline: none;
+}
+
+.timeline{
+    display: block;
+    margin-top: 4px;
+    text-align: right;
+}
+
+
